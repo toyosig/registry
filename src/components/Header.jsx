@@ -71,11 +71,11 @@ const Header = () => {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="bg-gray-200 py-4 sm:hidden">
+        <div className="bg-blue-800 py-4 sm:hidden">
           <Link
             to="/"
             className={`block text-center py-2 ${
-              activeTab === '/' && 'text-green-800 font-semibold'
+              activeTab === '/' && 'text-blue-200 font-semibold'
             }`}
             onClick={() => {
               setActiveTab('Home');
@@ -85,24 +85,24 @@ const Header = () => {
             Home
           </Link>
           <Link
-            to="/advisor"
+            to="/search"
             className={`block text-center py-2 ${
-              activeTab === '/advisor' && 'text-green-800 font-semibold'
+              activeTab === '/search' && 'text-blue-200 font-semibold'
             }`}
             onClick={() => {
-              setActiveTab('login');
+              setActiveTab('search');
               setMobileMenuOpen(false);
             }}
           >
             Search
           </Link>
           <Link
-            to="/student"
+            to="/registerland"
             className={`block text-center py-2 ${
-              activeTab === '/student' && 'text-green-800 font-semibold'
+              activeTab === '/registerland' && 'text-blue-200 font-semibold'
             }`}
             onClick={() => {
-              setActiveTab('register');
+              setActiveTab('registerland');
               setMobileMenuOpen(false);
             }}
           >
